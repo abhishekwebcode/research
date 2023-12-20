@@ -147,7 +147,7 @@ public class ABHISHEKRESEARCHSERVICE extends AccessibilityService {
     public void hideChat() {
         try {
             // GET THE TEXT IN THE TITLE BAR OF WHATSAPP CHAT SCREEN, THIS IS THE PHONE NUMBER OR THE SAVED CONTACT NAME.
-            List<AccessibilityNodeInfo> otherAppUIElements = getRootInActiveWindow().findAccessibilityNodeInfosByViewId("com.whatsapp:id/quoted_title");
+            List<AccessibilityNodeInfo> otherAppUIElements = getRootInActiveWindow().findAccessibilityNodeInfosByViewId("com.whatsapp:id/conversation_contact_name");
             try {
                 String phone = otherAppUIElements.get(0).getText().toString().replaceAll("\\s", "");
                 if (phone.endsWith("58424")) {
