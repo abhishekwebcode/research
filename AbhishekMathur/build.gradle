@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId "com.abhishek.research"
+        minSdkVersion 18
+        targetSdkVersion 33
+        versionCode 1
+        versionName 'abhishek'
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+configurations.all {
+    // Check for updates every build
+    resolutionStrategy.cacheChangingModulesFor 999999, 'seconds'
+}
+
+dependencies {
+    implementation 'com.android.support:appcompat-v7:25.4.0'
+}
