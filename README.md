@@ -1,3 +1,10 @@
+[ Update 9 April 2024 ]
+
+Research Paper published and available at https://ieeexplore.ieee.org/document/10486352
+"Improving Privacy and Security Using Android Accessibility Framework"
+
+--
+
 This is the code repository for android project for my research paper
 
 Accessibility service file in java - https://github.com/abhishekwebcode/research/blob/main/AbhishekMathur/src/main/java/com/abhishek/research/ABHISHEKRESEARCHSERVICE.java
